@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Resort Booking Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">EMAAR</h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="Video.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>The Place to</h2>
+            <h2>Explore & Have Fun</h2>
+            <p>Hotel offers pleasure for all the senses including top quality architecture 
+                and feel of nature in Dubai, UAE.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <div class="social">
+            <li><a href="#"></a><img src="Facebook.png" alt=""></li>
+            <li><a href="#"></a><img src="Instagram.png" alt=""></li>
+            <li><a href="#"></a><img src="Twitter.png" alt=""></li>
+        </div>
+        
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
